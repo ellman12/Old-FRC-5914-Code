@@ -1,0 +1,33 @@
+
+public class MathOPS {
+
+	public double a;
+	public double b;
+	public double c;
+
+	public MathOPS(double a1, double b1, double c1) {
+		a = a1;
+		b = b1;
+		c = c1;
+
+	}
+
+	public double calcY(double x) {
+		double y;
+
+		y = a * x * x + b * x + c;
+
+		return y;
+
+	}
+
+	public double calcABS(double x) {
+		
+		if (x < 0) {
+			x *= -1;
+		}
+		
+		return x;
+	}
+	
+}

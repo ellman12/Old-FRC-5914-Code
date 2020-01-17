@@ -1,0 +1,44 @@
+
+public class MathCalcs {
+
+	public static void main(String[] args) {
+
+		int i;
+		
+		double dVal;
+		double x = -20;
+
+		MathOPS OP1;
+
+		OP1 = new MathOPS(2, 5, 9);
+
+		System.out.println("Parabola");
+		
+		for (i = 0; i < 100; i++) {
+
+			dVal = OP1.calcY(x);
+
+			System.out.println("x = " + x + " y = " + dVal);
+
+			x += 0.5;
+			
+		}
+
+		System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+		
+		System.out.println("Absolute Value");
+
+		x = -20;
+		
+		for (i = 0; i < 100; i++) {
+			dVal = OP1.calcABS(x);
+			
+			System.out.println("x = " + x + " y = " + dVal);
+
+			x += 0.5;
+			
+		}
+		
+	}
+
+}
